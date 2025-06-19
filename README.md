@@ -1,8 +1,12 @@
 # Video & Photography Portfolio Website
-A modern, responsive portfolio website built for a creative professional to showcase their photo and video editing work. This was built for Jeremiah Manzano.
+A modern, responsive portfolio website built for a creative professional to showcase their photo and video editing work. This was built for Jeremiah Manzano. This is for public viewing and not the finalized version the client will be using.
 
 ## Live Demo
 **Deployed on Vercel:** https://www.jeremiahmanzano.com/
+
+## Mockup
+* First created a mockup for the client based on their design inspiration and specfication to consolidate the plan for the portfolio website.
+* https://www.figma.com/proto/dhTd2oMVyUKLgAWpriSgpX/Capule-Studios?node-id=27-56&t=xezS8ATproJIz2SQ-1
 
 ## 🛠️ Tech Stack
 * Framework: Next.js 14
