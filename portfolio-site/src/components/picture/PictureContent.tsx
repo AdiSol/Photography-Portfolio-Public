@@ -245,11 +245,11 @@ const PictureContent: React.FC = () => {
             pictures: [
               {
                 id: "landscape-1",
-                title: "Mountain Sunrise",
-                description: "Enhanced colors and contrast in this stunning mountain landscape",
+                title: "Pier View",
+                description: "Enhanced colors and contrast in this stunning pier landscape",
                 category: "landscape",
-                rawImage: "/images/PICC March 8, 2025 Picture 21 raw.jpg",
-                editedImage: "/images/PICC March 8, 2025 Picture 21 edit.jpg",
+                rawImage: "/images/landscape raw.jpg",
+                editedImage: "/images/landscape edit.jpg",
                 orientation: "horizontal"
               }
             ]
@@ -263,8 +263,8 @@ const PictureContent: React.FC = () => {
                 title: "Studio Portrait",
                 description: "Professional retouching and color grading",
                 category: "portrait",
-                rawImage: "/images/Cosplay-Carnival-42 raw.jpg",
-                editedImage: "/images/Cosplay-Carnival-42 edit.jpg",
+                rawImage: "/images/portrait raw.jpg",
+                editedImage: "/images/portrait edit.jpg",
                 orientation: "vertical"
               }
             ]
@@ -292,14 +292,17 @@ const PictureContent: React.FC = () => {
           message: 'Processing data...'
         }));
         
-        const data = await response.json();
+        let data = await response.json();
         
         setLoadingState(prev => ({ 
           ...prev, 
           progress: 50,
           message: 'Setting up gallery...'
         }));
-
+      
+        if(data.categories.length === 0) {
+          data = fallbackData;
+        }
         setPictureData(data);
         
         // Set the first category as default
