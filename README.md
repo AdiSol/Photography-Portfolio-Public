@@ -2,6 +2,8 @@
 A modern, responsive portfolio website built for a creative professional to showcase their photo and video editing work. This was built for Jeremiah Manzano. This is for public viewing and not the finalized version the client will be using.
 
 ## Live Demo
+
+**Deployed on Vercel:** https://jerem-manzano-portfolio.vercel.app/
 **Deployed on Vercel:** https://www.jeremiahmanzano.com/
 
 ## Mockup
